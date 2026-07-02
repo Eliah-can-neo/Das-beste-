@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WW2 – Interaktive Lernseite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Der Zweite Weltkrieg</h1>
+    <p>Eine interaktive Lernreise 1939–1945</p>
+    <a href="#start" class="btn">Starten</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#vor">Vor dem Krieg</a>
+  <a href="#krieg">Krieg</a>
+  <a href="#nach">Nachkrieg</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="vor" class="card">
+<h2>📖 Vor dem Krieg</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Europe_1923_map_en.png">
+<p>
+Nach dem Ersten Weltkrieg war Europa instabil. Deutschland wurde stark durch den Versailler Vertrag belastet.
+Die Weltwirtschaftskrise 1929 führte zu Armut und politischer Instabilität.
+</p>
+</section>
+
+<section id="krieg" class="card">
+<h2>⚔️ Während des Krieges</h2>
+<ul>
+<li>1939 – Angriff auf Polen</li>
+<li>1940 – Frankreich fällt</li>
+<li>1941 – Operation Barbarossa</li>
+<li>1941 – Pearl Harbor</li>
+<li>1944 – D-Day</li>
+<li>1945 – Kriegsende</li>
+</ul>
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/WW2_Europe_1941_he.svg">
+</section>
+
+<section id="nach" class="card">
+<h2>🕊️ Nach dem Krieg</h2>
+<p>
+Deutschland wird geteilt. BRD und DDR entstehen 1949. Die UNO wird gegründet.
+Der Kalte Krieg beginnt.
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Berlin_ruins_1945.jpg">
+</section>
+
+<section id="quiz" class="card">
+
+<h2>❓ Quiz</h2>
+
+<p>1. Wann begann der Krieg?</p>
+<button onclick="answer(1,true)">1939</button>
+<button onclick="answer(1,false)">1945</button>
+<p id="r1"></p>
+
+<p>2. Wer wurde zuerst angegriffen?</p>
+<button onclick="answer(2,true)">Polen</button>
+<button onclick="answer(2,false)">Frankreich</button>
+<p id="r2"></p>
+
+<p>3. Wann endete er?</p>
+<button onclick="answer(3,true)">1945</button>
+<button onclick="answer(3,false)">1943</button>
+<p id="r3"></p>
+
+<hr>
+
+<p id="result"></p>
+
+<button onclick="restart()">Quiz neu starten</button>
+
+</section>
+
+<footer>
+<p>WW2 Projekt – GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
